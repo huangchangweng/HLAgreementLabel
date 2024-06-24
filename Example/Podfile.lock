@@ -1,0 +1,23 @@
+PODS:
+  - HLAgreementLabel (0.1.0):
+    - YYText
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - HLAgreementLabel (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - YYText
+
+EXTERNAL SOURCES:
+  HLAgreementLabel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HLAgreementLabel: f446bfe0d7f8bc8569658b68656bb5b3a19a6b7d
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 29d82d885e7dd8652ec6bf543e870ee0efd3ebbf
+
+COCOAPODS: 1.14.3

@@ -1,0 +1,6 @@
+framework module HLAgreementLabel {
+  umbrella header "HLAgreementLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

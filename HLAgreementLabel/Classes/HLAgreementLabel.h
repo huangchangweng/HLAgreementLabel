@@ -1,20 +1,16 @@
-# HLAgreementLabel
+//
+//  HLAgreementLabel.h
+//  HLAgreementLabel
+//
+//  Created by 黄常翁 on 2024/6/21.
+//
 
-一行代码实现项目中“同意协议”或“弹窗协议”，依赖YYText。
+#import <YYText/YYText.h>
 
+typedef void(^HLAgreementLabelHighlightTextTapBlock)(NSString *highlightStr, NSRange range);
+typedef void(^HLAgreementLabelIconTapBlock)(BOOL selected,NSRange range);
 
-
-##### 支持使用CocoaPods引入, Podfile文件中添加:
-
-```objc
-pod 'HLAgreementLabel', '0.1.0'
-```
-
-# Demonstration
-
-可设置属性:
-
-```objc
+@interface HLAgreementLabel : YYLabel
 /// 文字颜色，默认[UIColor blackColor]
 @property (nonatomic, strong) IBInspectable UIColor *normalTextColor;
 /// 高亮文字颜色，默认[UIColor blueColor]
@@ -55,18 +51,4 @@ pod 'HLAgreementLabel', '0.1.0'
 @property (copy, nonatomic) HLAgreementLabelHighlightTextTapBlock highlightTextTapBlock;
 /// 点击选择图标回调，注意weakSelf
 @property (copy, nonatomic) HLAgreementLabelIconTapBlock iconTapBlock;
-```
-
-# Requirements
-
-iOS 9.0 +, Xcode 7.0 +
-
-# Version
-
-- 0. 1.0:
-  
-  完成HLAgreementLabel基础搭建
-
-# License
-
-HLTimeLineView is available under the MIT license. See the LICENSE file for more info.
+@end
