@@ -12,6 +12,8 @@ pod 'HLAgreementLabel', '0.1.0'
 
 # Demonstration
 
+![image](https://p.ipic.vip/ymqjtx.png)
+
 可设置属性:
 
 ```objc
